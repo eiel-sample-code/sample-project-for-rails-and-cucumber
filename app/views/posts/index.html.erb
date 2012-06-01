@@ -1,5 +1,18 @@
 <h1>一行掲示板</h1>
 
+<section id="form">
+  <%= form_for @post do |f| %>
+    <div>
+      <%= f.label :name, "名前" %>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= f.label :comment, "内容" %>
+      <%= f.text_field :comment %>
+    </div>
+  <% end %>
+</section>
+
 <section id="posts">
   <% @posts.each do |post| %>
     <div class="post">
