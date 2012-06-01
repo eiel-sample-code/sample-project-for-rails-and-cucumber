@@ -9,10 +9,11 @@ describe "posts/index" do
 
   context "投稿があるとき" do
     before :each do
-      assign :posts, FactoryGirl.create_list(:post,1)
+      assign :posts, FactoryGirl.create_list(:post, 1, created_at: 3.days.ago)
     end
     it { should have_css("#posts .name", text: "とうこうしゃ") }
     it { should have_css("#posts .comment", text: "こめんと") }
+    it { should have_css("#posts .published", text: "3 days ago") }
     it { should have_css("h1", text: "一行掲示板") }
     it { should have_css("label", text: "名前") }
     it { should have_css("label", text: "内容") }
