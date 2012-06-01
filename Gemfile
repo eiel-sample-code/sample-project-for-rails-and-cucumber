@@ -36,3 +36,17 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test, :development do
+  gem "rspec-rails", "~> 2.6"
+  gem "rspec-tag_matchers"
+  gem "capybara"
+  gem "spork-rails"
+end
+
+group :test do
+  gem "cucumber-rails", require: false
+  gem "database_cleaner"
+end
+
+gem 'factory_girl_rails'
