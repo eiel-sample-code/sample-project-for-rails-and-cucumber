@@ -6,7 +6,7 @@ Disabling profiles...
 
   シナリオ: 投稿の閲覧[90m               # features/oneline.feature:5[0m
     [31m前提"[31m[1m投稿者1[0m[0m[31m"の"[31m[1mおはよう[0m[0m[31m"という投稿がある[90m # features/step_definitions/oneline_steps.rb:2[0m[0m
-[31m      uninitialized constant Post (NameError)[0m
+[31m      Could not find table 'posts' (ActiveRecord::StatementInvalid)[0m
 [31m      ./features/step_definitions/oneline_steps.rb:3:in `/^"(.*?)"の"(.*?)"という投稿がある$/'[0m
 [31m      features/oneline.feature:6:in `前提"投稿者1"の"おはよう"という投稿がある'[0m
     [36mもし"[36m[1mトップ[0m[0m[36m"ページにアクセス[90m         # features/step_definitions/oneline_steps.rb:6[0m[0m
@@ -29,4 +29,4 @@ Disabling profiles...
 
 2 scenarios ([31m1 failed[0m, [33m1 pending[0m)
 10 steps ([31m1 failed[0m, [36m8 skipped[0m, [33m1 pending[0m)
-0m0.429s
+0m0.495s
