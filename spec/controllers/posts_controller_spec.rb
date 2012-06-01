@@ -7,5 +7,9 @@ describe PostsController do
       get :index
     end
     it { should be_success }
+    describe "@posts" do
+      subject { assigns(:posts) }
+      it { should_not be_nil }
+    end
   end
 end
