@@ -3,8 +3,8 @@
   FactoryGirl.create :post, name: name, comment: comment
 end
 
-もし /^"(.*?)"ページにアクセス$/ do |page_name|
-  pending # express the regexp above with the code you wish you had
+もし /^"トップ"ページにアクセス$/ do
+  visit("/")
 end
 
 ならば /^"(.*?)"と表示されている$/ do |str|

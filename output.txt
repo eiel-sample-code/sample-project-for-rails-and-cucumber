@@ -6,24 +6,24 @@ Disabling profiles...
 
   シナリオ: 投稿の閲覧[90m               # features/oneline.feature:5[0m
     [32m前提"[32m[1m投稿者1[0m[0m[32m"の"[32m[1mおはよう[0m[0m[32m"という投稿がある[90m # features/step_definitions/oneline_steps.rb:2[0m[0m
-    [33mもし"[33m[1mトップ[0m[0m[33m"ページにアクセス[90m         # features/step_definitions/oneline_steps.rb:6[0m[0m
+    [32mもし"[32m[1mトップ[0m[0m[32m"ページにアクセス[90m         # features/step_definitions/oneline_steps.rb:6[0m[0m
+    [33mならば"[33m[1m投稿者1[0m[0m[33m"と表示されている[90m       # features/step_definitions/oneline_steps.rb:10[0m[0m
 [33m      TODO (Cucumber::Pending)[0m
-[33m      ./features/step_definitions/oneline_steps.rb:7:in `/^"(.*?)"ページにアクセス$/'[0m
-[33m      features/oneline.feature:7:in `もし"トップ"ページにアクセス'[0m
-    [36mならば"[36m[1m投稿者1[0m[0m[36m"と表示されている[90m       # features/step_definitions/oneline_steps.rb:10[0m[0m
+[33m      ./features/step_definitions/oneline_steps.rb:11:in `/^"(.*?)"と表示されている$/'[0m
+[33m      features/oneline.feature:8:in `ならば"投稿者1"と表示されている'[0m
     [36mかつ"[36m[1mおはよう[0m[0m[36m"と表示されている[90m        # features/step_definitions/oneline_steps.rb:10[0m[0m
 
   シナリオ: メモの投稿[90m         # features/oneline.feature:11[0m
-    [33mもし"[33m[1mトップ[0m[0m[33m"ページにアクセス[90m   # features/step_definitions/oneline_steps.rb:6[0m[0m
+    [32mもし"[32m[1mトップ[0m[0m[32m"ページにアクセス[90m   # features/step_definitions/oneline_steps.rb:6[0m[0m
+    [33mかつ"[33m[1m名前[0m[0m[33m"に"[33m[1m投稿者1[0m[0m[33m"と入力[90m  # features/step_definitions/oneline_steps.rb:14[0m[0m
 [33m      TODO (Cucumber::Pending)[0m
-[33m      ./features/step_definitions/oneline_steps.rb:7:in `/^"(.*?)"ページにアクセス$/'[0m
-[33m      features/oneline.feature:12:in `もし"トップ"ページにアクセス'[0m
-    [36mかつ"[36m[1m名前[0m[0m[36m"に"[36m[1m投稿者1[0m[0m[36m"と入力[90m  # features/step_definitions/oneline_steps.rb:14[0m[0m
+[33m      ./features/step_definitions/oneline_steps.rb:15:in `/^"(.*?)"に"(.*?)"と入力$/'[0m
+[33m      features/oneline.feature:13:in `かつ"名前"に"投稿者1"と入力'[0m
     [36mかつ"[36m[1m内容[0m[0m[36m"に"[36m[1mこんにちは[0m[0m[36m"と入力[90m # features/step_definitions/oneline_steps.rb:14[0m[0m
     [36mかつ"[36m[1m投稿[0m[0m[36m"をクリック[90m       # features/step_definitions/oneline_steps.rb:18[0m[0m
     [36mならば"[36m[1m投稿者1[0m[0m[36m"と表示されている[90m # features/step_definitions/oneline_steps.rb:10[0m[0m
     [36mかつ"[36m[1mこんにちは[0m[0m[36m"と表示されている[90m # features/step_definitions/oneline_steps.rb:10[0m[0m
 
 2 scenarios ([33m2 pending[0m)
-10 steps ([36m7 skipped[0m, [33m2 pending[0m, [32m1 passed[0m)
-0m0.522s
+10 steps ([36m5 skipped[0m, [33m2 pending[0m, [32m3 passed[0m)
+0m0.629s
