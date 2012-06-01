@@ -16,4 +16,12 @@ describe PostsController do
       it { should be_a(Post) }
     end
   end
+
+  describe "POST create" do
+    subject { response }
+    before :each do
+      post :create
+    end
+    it { should redirect_to(action: :index) }
+  end
 end
