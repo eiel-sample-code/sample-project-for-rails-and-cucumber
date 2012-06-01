@@ -1,0 +1,66 @@
+Using the default profile...
+Disabling profiles...
+# language: ja
+フィーチャ: 一行掲示板
+  1行だけのメモ書きの掲示板。誰でも投稿でき、投稿内容を閲覧することができる
+
+  シナリオ: 投稿の閲覧[90m               # features/oneline.feature:5[0m
+    [33m前提"投稿者1"の"おはよう"という投稿がある[90m # features/oneline.feature:6[0m[0m
+[33m      Undefined step: ""投稿者1"の"おはよう"という投稿がある" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:6:in `前提"投稿者1"の"おはよう"という投稿がある'[0m
+    [33mもし"トップ"ページにアクセス[90m         # features/oneline.feature:7[0m[0m
+[33m      Undefined step: ""トップ"ページにアクセス" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:7:in `もし"トップ"ページにアクセス'[0m
+    [33mならば"投稿者1"と表示されている[90m       # features/oneline.feature:8[0m[0m
+[33m      Undefined step: ""投稿者1"と表示されている" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:8:in `ならば"投稿者1"と表示されている'[0m
+    [33mかつ"おはよう"と表示されている[90m        # features/oneline.feature:9[0m[0m
+[33m      Undefined step: ""おはよう"と表示されている" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:9:in `かつ"おはよう"と表示されている'[0m
+
+  シナリオ: メモの投稿[90m         # features/oneline.feature:11[0m
+    [33mもし"トップ"ページにアクセス[90m   # features/oneline.feature:12[0m[0m
+[33m      Undefined step: ""トップ"ページにアクセス" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:12:in `もし"トップ"ページにアクセス'[0m
+    [33mかつ"名前"に"投稿者1"と入力[90m  # features/oneline.feature:13[0m[0m
+[33m      Undefined step: ""名前"に"投稿者1"と入力" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:13:in `かつ"名前"に"投稿者1"と入力'[0m
+    [33mかつ"内容"に"こんにちは"と入力[90m # features/oneline.feature:14[0m[0m
+[33m      Undefined step: ""内容"に"こんにちは"と入力" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:14:in `かつ"内容"に"こんにちは"と入力'[0m
+    [33mかつ"投稿"をクリック[90m       # features/oneline.feature:15[0m[0m
+[33m      Undefined step: ""投稿"をクリック" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:15:in `かつ"投稿"をクリック'[0m
+    [33mならば"投稿者1"と表示されている[90m # features/oneline.feature:16[0m[0m
+[33m      Undefined step: ""投稿者1"と表示されている" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:16:in `ならば"投稿者1"と表示されている'[0m
+    [33mかつ"こんにちは"と表示されている[90m # features/oneline.feature:17[0m[0m
+[33m      Undefined step: ""こんにちは"と表示されている" (Cucumber::Undefined)[0m
+[33m      features/oneline.feature:17:in `かつ"こんにちは"と表示されている'[0m
+
+2 scenarios ([33m2 undefined[0m)
+10 steps ([33m10 undefined[0m)
+0m0.475s
+[33m[0m
+[33mYou can implement step definitions for undefined steps with these snippets:[0m
+[33m[0m
+[33m前提 /^"(.*?)"の"(.*?)"という投稿がある$/ do |arg1, arg2|[0m
+[33m  pending # express the regexp above with the code you wish you had[0m
+[33mend[0m
+[33m[0m
+[33mもし /^"(.*?)"ページにアクセス$/ do |arg1|[0m
+[33m  pending # express the regexp above with the code you wish you had[0m
+[33mend[0m
+[33m[0m
+[33mならば /^"(.*?)"と表示されている$/ do |arg1|[0m
+[33m  pending # express the regexp above with the code you wish you had[0m
+[33mend[0m
+[33m[0m
+[33mもし /^"(.*?)"に"(.*?)"と入力$/ do |arg1, arg2|[0m
+[33m  pending # express the regexp above with the code you wish you had[0m
+[33mend[0m
+[33m[0m
+[33mもし /^"(.*?)"をクリック$/ do |arg1|[0m
+[33m  pending # express the regexp above with the code you wish you had[0m
+[33mend[0m
+
