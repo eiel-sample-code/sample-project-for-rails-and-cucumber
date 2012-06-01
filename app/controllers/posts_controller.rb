@@ -1,6 +1,4 @@
-class PostsController < ActionController::Base
-  layout "application"
-
+class PostsController < ApplicationController
   def index
     @post = Post.new
     @posts = Post.all
