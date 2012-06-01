@@ -1,0 +1,27 @@
+
+PostsController
+  GET index
+    example at ./spec/controllers/posts_controller_spec.rb:9 (FAILED - 1)
+
+Post
+  add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb (PENDING: No reason given)
+
+Pending:
+  Post add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb
+    # No reason given
+    # ./spec/models/post_spec.rb:4
+
+Failures:
+
+  1) PostsController GET index 
+     Failure/Error: get :index
+     AbstractController::ActionNotFound:
+       The action 'index' could not be found for PostsController
+     # ./spec/controllers/posts_controller_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+Finished in 0.01971 seconds
+2 examples, 1 failure, 1 pending
+
+Failed examples:
+
+rspec ./spec/controllers/posts_controller_spec.rb:9 # PostsController GET index 
