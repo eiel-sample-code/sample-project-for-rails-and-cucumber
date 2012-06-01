@@ -9,7 +9,7 @@ describe PostsController do
     it { should be_success }
     describe "@posts" do
       subject { assigns(:posts) }
-      it { should_not be_nil }
+      it { should be_a(Array) }
     end
   end
 end
