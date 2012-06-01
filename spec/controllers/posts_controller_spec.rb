@@ -11,5 +11,9 @@ describe PostsController do
       subject { assigns(:posts) }
       it { should be_a(Array) }
     end
+    describe "@post" do
+      subject { assigns(:post) }
+      it { should be_a(Post) }
+    end
   end
 end

@@ -4,6 +4,8 @@ PostsController
     should be success
     @posts
       should be a kind of Array
+    @post
+      should be a kind of Post(id: integer, name: string, comment: string, created_at: datetime, updated_at: datetime)
 
 Post
   add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb (PENDING: No reason given)
@@ -24,5 +26,5 @@ Pending:
     # No reason given
     # ./spec/models/post_spec.rb:4
 
-Finished in 0.64598 seconds
-10 examples, 0 failures, 1 pending
+Finished in 0.20476 seconds
+11 examples, 0 failures, 1 pending
