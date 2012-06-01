@@ -3,7 +3,7 @@ PostsController
   GET index
     should be success
     @posts
-      should be a kind of Array (FAILED - 1)
+      should be a kind of Array
 
 Post
   add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb (PENDING: No reason given)
@@ -22,16 +22,5 @@ Pending:
     # No reason given
     # ./spec/models/post_spec.rb:4
 
-Failures:
-
-  1) PostsController GET index @posts 
-     Failure/Error: it { should be_a(Array) }
-       expected nil to be a kind of Array
-     # ./spec/controllers/posts_controller_spec.rb:12:in `block (4 levels) in <top (required)>'
-
-Finished in 0.22587 seconds
-8 examples, 1 failure, 1 pending
-
-Failed examples:
-
-rspec ./spec/controllers/posts_controller_spec.rb:12 # PostsController GET index @posts 
+Finished in 0.18129 seconds
+8 examples, 0 failures, 1 pending
