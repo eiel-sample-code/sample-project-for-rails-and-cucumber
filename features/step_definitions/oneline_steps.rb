@@ -12,9 +12,9 @@ end
 end
 
 もし /^"(.*?)"に"(.*?)"と入力$/ do |label, value|
-  pending # express the regexp above with the code you wish you had
+  fill_in label, with: value
 end
 
 もし /^"(.*?)"をクリック$/ do |str|
-  pending # express the regexp above with the code you wish you had
+  click_on str
 end
