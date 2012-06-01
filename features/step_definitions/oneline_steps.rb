@@ -8,7 +8,7 @@ end
 end
 
 ならば /^"(.*?)"と表示されている$/ do |str|
-  pending # express the regexp above with the code you wish you had
+  should have_content(str)
 end
 
 もし /^"(.*?)"に"(.*?)"と入力$/ do |label, value|
