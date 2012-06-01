@@ -7,15 +7,19 @@ Disabling profiles...
   シナリオテンプレート: 投稿の閲覧[90m            # features/oneline.feature:5[0m
     [36m前提"<なまえ>"の"<こめんと>"という投稿がある[90m # features/step_definitions/oneline_steps.rb:2[0m[0m
     [36mもし"トップ"ページにアクセス[90m            # features/step_definitions/oneline_steps.rb:6[0m[0m
-    [36mならば"<なまえ>"と表示されている[90m         # features/step_definitions/oneline_steps.rb:10[0m[0m
+    [36mならば"<表示名>"と表示されている[90m         # features/step_definitions/oneline_steps.rb:10[0m[0m
     [36mかつ"<こめんと>"と表示されている[90m         # features/step_definitions/oneline_steps.rb:10[0m[0m
 
     例: 
-      | [36m[1mなまえ [0m[0m[36m[0m |[0m [36m[1mこめんと [0m[0m[36m[0m |[0m
-      | [32m投稿者1[0m[0m |[0m [32mおはよう [0m[0m |[0m
-      | [32m投稿者2[0m[0m |[0m [32mこんばんは[0m[0m |[0m
+      | [36m[1mなまえ [0m[0m[36m[0m |[0m [36m[1mこめんと     [0m[0m[36m[0m |[0m [36m[1m表示名 [0m[0m[36m[0m |[0m
+      | [32m投稿者1[0m[0m |[0m [32mおはよう     [0m[0m |[0m [32m投稿者1[0m[0m |[0m
+      | [32m投稿者2[0m[0m |[0m [32mこんばんは    [0m[0m |[0m [32m投稿者2[0m[0m |[0m
+      | [32m    [0m[0m |[0m [32mおつかれさまです。[0m[0m |[0m [31m匿名  [0m[0m |[0m
+[31m      expected there to be content "匿名" in "Oneline\n\n一行掲示板\n\n\n    \n      名前\n      \n    \n      内容\n      \n    \n      \n        \n      \n      \n        おつかれさまです。\n      \n    \n" (RSpec::Expectations::ExpectationNotMetError)[0m
+[31m      ./features/step_definitions/oneline_steps.rb:11:in `/^"(.*?)"と表示されている$/'[0m
+[31m      features/oneline.feature:8:in `ならば"<表示名>"と表示されている'[0m
 
-  シナリオ: メモの投稿[90m         # features/oneline.feature:15[0m
+  シナリオ: メモの投稿[90m         # features/oneline.feature:16[0m
     [32mもし"トップ"ページにアクセス[90m   # features/step_definitions/oneline_steps.rb:6[0m[0m
     [32mかつ"[32m[1m名前[0m[0m[32m"に"[32m[1m投稿者1[0m[0m[32m"と入力[90m  # features/step_definitions/oneline_steps.rb:14[0m[0m
     [32mかつ"[32m[1m内容[0m[0m[32m"に"[32m[1mこんにちは[0m[0m[32m"と入力[90m # features/step_definitions/oneline_steps.rb:14[0m[0m
@@ -23,6 +27,9 @@ Disabling profiles...
     [32mならば"[32m[1m投稿者1[0m[0m[32m"と表示されている[90m # features/step_definitions/oneline_steps.rb:10[0m[0m
     [32mかつ"[32m[1mこんにちは[0m[0m[32m"と表示されている[90m # features/step_definitions/oneline_steps.rb:10[0m[0m
 
-3 scenarios ([32m3 passed[0m)
-14 steps ([32m14 passed[0m)
-0m0.805s
+[31mFailing Scenarios:[0m
+[31mcucumber features/oneline.feature:5[0m[90m # Scenario: 投稿の閲覧[0m
+
+4 scenarios ([31m1 failed[0m, [32m3 passed[0m)
+18 steps ([31m1 failed[0m, [36m1 skipped[0m, [32m16 passed[0m)
+0m0.886s
