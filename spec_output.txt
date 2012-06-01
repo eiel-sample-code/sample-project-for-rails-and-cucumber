@@ -6,6 +6,8 @@ PostsController
       should be a kind of Array
     @post
       should be a kind of Post(id: integer, name: string, comment: string, created_at: datetime, updated_at: datetime)
+  POST create
+    should redirect to {:action=>:index}
 
 Post
   add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb (PENDING: No reason given)
@@ -15,16 +17,18 @@ posts/index
     should has css "#posts .name" with text "とうこうしゃ"
     should has css "#posts .comment" with text "こめんと"
     should has css "h1" with text "一行掲示板"
+    should has css "label" with text "名前"
+    should has css "label" with text "内容"
   投稿がないとき
     should not has css ".post"
     should has css "h1" with text "一行掲示板"
-    should has css "label"
-    should has css "label"
+    should has css "label" with text "名前"
+    should has css "label" with text "内容"
 
 Pending:
   Post add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb
     # No reason given
     # ./spec/models/post_spec.rb:4
 
-Finished in 0.20476 seconds
-11 examples, 0 failures, 1 pending
+Finished in 0.42635 seconds
+14 examples, 0 failures, 1 pending

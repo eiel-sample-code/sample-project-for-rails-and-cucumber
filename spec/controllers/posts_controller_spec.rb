@@ -20,6 +20,9 @@ describe PostsController do
   describe "POST create" do
     subject { response }
     before :each do
+      @post = mock_model(Post)
+      @post.stub(:save)
+      Post.stub(:new) { @post }
       post :create
     end
     it { should redirect_to(action: :index) }
