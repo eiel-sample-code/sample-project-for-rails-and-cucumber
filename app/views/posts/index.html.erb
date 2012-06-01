@@ -1,12 +1,14 @@
 <h1>一行掲示板</h1>
 
 <section id="posts">
-  <div class="post">
-    <div class="name">
-      投稿者1
+  <% @posts.each do |post| %>
+    <div class="post">
+      <div class="name">
+        <%= post.name %>
+      </div>
+      <div class="comment">
+        <%= post.comment %>
+      </div>
     </div>
-    <div class="comment">
-      おはよう
-    </div>
-  </div>
+  <% end %>
 </section>
