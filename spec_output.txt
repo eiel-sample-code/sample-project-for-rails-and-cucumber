@@ -6,6 +6,9 @@ PostsController
 Post
   add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb (PENDING: No reason given)
 
+posts/index
+  example at ./spec/views/posts/index.html.erb_spec.rb:6 (FAILED - 2)
+
 Pending:
   Post add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb
     # No reason given
@@ -17,12 +20,21 @@ Failures:
      Failure/Error: get :index
      ActionView::MissingTemplate:
        Missing template posts/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
-         * "#<RSpec::Rails::ViewRendering::EmptyTemplatePathSetDecorator:0x007facf4faee90>"
+         * "#<RSpec::Rails::ViewRendering::EmptyTemplatePathSetDecorator:0x007fe71cfb2060>"
      # ./spec/controllers/posts_controller_spec.rb:7:in `block (3 levels) in <top (required)>'
 
-Finished in 0.09531 seconds
-2 examples, 1 failure, 1 pending
+  2) posts/index 
+     Failure/Error: subject { render }
+     ActionView::MissingTemplate:
+       Missing template posts/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+         * "/Users/eiel/Study/hiroshima.rb/oneline/app/views"
+     # ./spec/views/posts/index.html.erb_spec.rb:5:in `block (2 levels) in <top (required)>'
+     # ./spec/views/posts/index.html.erb_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+Finished in 0.0703 seconds
+3 examples, 2 failures, 1 pending
 
 Failed examples:
 
 rspec ./spec/controllers/posts_controller_spec.rb:9 # PostsController GET index 
+rspec ./spec/views/posts/index.html.erb_spec.rb:6 # posts/index 
