@@ -7,20 +7,41 @@ Post
   add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb (PENDING: No reason given)
 
 posts/index
-  should has css "h1" with text "一行掲示板"
+  投稿があるとき
+    should has css "#posts .name" with text "とうこうしゃ" (FAILED - 1)
+    should has css "#posts .comment" with text "こめんと" (FAILED - 2)
+    should has css "h1" with text "一行掲示板"
+  投稿がないとき
+    should not has css ".post" (FAILED - 3)
+    should has css "h1" with text "一行掲示板"
 
 Pending:
   Post add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb
     # No reason given
     # ./spec/models/post_spec.rb:4
 
-Top 3 slowest examples (0.09858 seconds, 100.0% of total time):
-  PostsController GET index 
-    0.07662 seconds ./spec/controllers/posts_controller_spec.rb:9
-  posts/index 
-    0.02195 seconds ./spec/views/posts/index.html.erb_spec.rb:6
-  Post add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb
-    0.00002 seconds ./spec/models/post_spec.rb:4
+Failures:
 
-Finished in 0.09977 seconds
-3 examples, 0 failures, 1 pending
+  1) posts/index 投稿があるとき 
+     Failure/Error: it { should have_css("#posts .name", text: "とうこうしゃ") }
+       expected css "#posts .name" with text "とうこうしゃ" to return something
+     # ./spec/views/posts/index.html.erb_spec.rb:11:in `block (3 levels) in <top (required)>'
+
+  2) posts/index 投稿があるとき 
+     Failure/Error: it { should have_css("#posts .comment", text: "こめんと") }
+       expected css "#posts .comment" with text "こめんと" to return something
+     # ./spec/views/posts/index.html.erb_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  3) posts/index 投稿がないとき 
+     Failure/Error: it { should_not have_css(".post") }
+       expected css ".post" not to return anything
+     # ./spec/views/posts/index.html.erb_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+Finished in 0.16953 seconds
+7 examples, 3 failures, 1 pending
+
+Failed examples:
+
+rspec ./spec/views/posts/index.html.erb_spec.rb:11 # posts/index 投稿があるとき 
+rspec ./spec/views/posts/index.html.erb_spec.rb:12 # posts/index 投稿があるとき 
+rspec ./spec/views/posts/index.html.erb_spec.rb:20 # posts/index 投稿がないとき 
