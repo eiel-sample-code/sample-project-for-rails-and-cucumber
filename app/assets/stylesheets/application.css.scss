@@ -11,3 +11,21 @@
  *= require_self
  *= require_tree .
 */
+
+#posts {
+    height: 20px;
+    .name {
+	    display: inline-block;
+        width: 10%;
+        background-color: #ffeeff;
+        padding: 0.5em;
+        margin: 0.5em 0;
+    }
+    .comment {
+	    display: inline-block;
+        background-color: #ffeeee;
+        width: 80%;
+        padding: 0.5em;
+        margin: 0.5em 0;
+    }
+}
