@@ -21,7 +21,7 @@ Disabling profiles...
     [32mかつ"[32m[1m名前[0m[0m[32m"に"[32m[1m投稿者1[0m[0m[32m"と入力[90m  # features/step_definitions/oneline_steps.rb:14[0m[0m
     [32mかつ"[32m[1m内容[0m[0m[32m"に"[32m[1mこんにちは[0m[0m[32m"と入力[90m # features/step_definitions/oneline_steps.rb:14[0m[0m
     [31mかつ"[31m[1m投稿[0m[0m[31m"をクリック[90m       # features/step_definitions/oneline_steps.rb:18[0m[0m
-[31m      no link or button '投稿' found (Capybara::ElementNotFound)[0m
+[31m      The action 'create' could not be found for PostsController (AbstractController::ActionNotFound)[0m
 [31m      (eval):2:in `click_on'[0m
 [31m      ./features/step_definitions/oneline_steps.rb:19:in `/^"(.*?)"をクリック$/'[0m
 [31m      features/oneline.feature:21:in `かつ"投稿"をクリック'[0m
@@ -33,4 +33,4 @@ Disabling profiles...
 
 3 scenarios ([31m1 failed[0m, [32m2 passed[0m)
 14 steps ([31m1 failed[0m, [36m2 skipped[0m, [32m11 passed[0m)
-0m0.851s
+0m0.955s
