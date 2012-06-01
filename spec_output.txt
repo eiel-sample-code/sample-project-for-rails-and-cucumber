@@ -16,11 +16,30 @@ posts/index
   投稿がないとき
     should not has css ".post"
     should has css "h1" with text "一行掲示板"
+    should has css "label" (FAILED - 1)
+    should has css "label" (FAILED - 2)
 
 Pending:
   Post add some examples to (or delete) /Users/eiel/Study/hiroshima.rb/oneline/spec/models/post_spec.rb
     # No reason given
     # ./spec/models/post_spec.rb:4
 
-Finished in 0.18129 seconds
-8 examples, 0 failures, 1 pending
+Failures:
+
+  1) posts/index 投稿がないとき 
+     Failure/Error: it { should have_css("label", value: "名前") }
+       expected css "label" to return something
+     # ./spec/views/posts/index.html.erb_spec.rb:25:in `block (3 levels) in <top (required)>'
+
+  2) posts/index 投稿がないとき 
+     Failure/Error: it { should have_css("label", value: "内容") }
+       expected css "label" to return something
+     # ./spec/views/posts/index.html.erb_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.18842 seconds
+10 examples, 2 failures, 1 pending
+
+Failed examples:
+
+rspec ./spec/views/posts/index.html.erb_spec.rb:25 # posts/index 投稿がないとき 
+rspec ./spec/views/posts/index.html.erb_spec.rb:26 # posts/index 投稿がないとき 
